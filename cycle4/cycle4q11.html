@@ -1,0 +1,39 @@
+
+<html>
+
+<head>
+    
+    <title>mouse over</title>
+</head>
+
+<body>
+    <img id="img" name="img"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9A1314vl-7dqNvfWcMn5ONgAznelb8wpLOIcC3ZmSq4wHkM8yW8DEb3KqosX5kzvjjTM&usqp=CAU"
+        alt="">
+    <p id="txt" name="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus a suscipit aliquam eum,
+        totam, dolorum vel porro
+        eius ab magnam, architecto veritatis dolores eos consectetur?
+    </p>
+
+    <script>
+        let img = document.getElementById("img")
+        let txt = document.getElementById("txt")
+
+        img.addEventListener("mouseover", () => {
+            document.img.src = "https://www.tutorialspoint.com/static/images/logo-footer-b.png"
+        })
+        img.addEventListener("mouseout", () => {
+            document.img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9A1314vl-7dqNvfWcMn5ONgAznelb8wpLOIcC3ZmSq4wHkM8yW8DEb3KqosX5kzvjjTM&usqp=CAU"
+        })
+
+        txt.addEventListener("mouseover", () => {
+            document.getElementById("txt").innerHTML = "3244444444444444444444444444444455555555555555555555555555555555555555."
+        })
+        txt.addEventListener("mouseout", () => {
+            document.getElementById("txt").innerHTML = " eeeeeeeeeeeeeeeeeeeewwwwwwwwwwwwwwwwwweeeeeeeeeeeeeeeeeeeeeeeeeeeeeewe?"
+        })
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+<html>
+<head>
+<head>
+<body>
+<p>your age:</p>
+<p id="g"> </p>
+<p>your name is</p>
+<p id="l"></p>
+<script>
+
+var x = prompt("enter your name")
+var y = new Date(prompt("enter your DOB(yyyy-mm-dd)"))
+var date = new Date()
+var z = date.getFullYear() - y.getFullYear()
+document.getElementById("g").innerHTML= z;
+document.getElementById("l").innerHTML=x;
+
+</script>
+</body>
+</html>
